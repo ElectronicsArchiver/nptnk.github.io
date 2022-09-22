@@ -1,0 +1,164 @@
+@font-face {
+    font-family: vcr;
+    src: url(../fonts/vcr.ttf);
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    font-family: vcr;
+    padding: 50px
+}
+
+.center {
+    text-align: center;
+    color: gray;
+    margin: auto;
+    text-shadow: 2px 2px black;
+
+    &.big {
+        text-shadow: 5px 5px black;
+        font-size: 60px;
+    }
+}
+
+a {
+    transition: all 1s ease;
+}
+
+a:hover {
+    transition: all 1s ease;
+    color: rgb(165, 0, 0)
+}
+
+.white {
+    color: white
+}
+
+/*border*/
+
+.test {
+    transition: all 1s ease;
+    padding-right: -10px;
+    width: 15.9vw;
+    height: 400px;
+    border-radius: 10px;
+    background-color: rgb(56, 56, 56);
+    box-shadow: -5px 5px black;
+    float: left;
+    margin: 20px;
+}
+
+.test:hover {
+    transform: scale(1.1);
+    box-shadow: -10px 10px black;
+}
+
+img {
+    transition: all 1s ease;
+    width: 15.9vw;
+    border-radius: 5px;
+}
+
+p.doaflip {
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+    padding: 10px
+}
+
+p {
+    position: relative;
+    left: 15px
+}
+
+.tiny {
+    width: 10px;
+}
+
+i {
+    float: left;
+    color: white;
+    position: relative;
+    left: 10px
+}
+
+.moveupatadbit {
+    position: relative;
+    bottom: 25px;
+}
+
+.movedownatadbit {
+    position: relative;
+    top: 50px;
+}
+
+.moveupatadbitmore {
+    position: relative;
+    bottom: 40px;
+}
+
+
+
+
+
+
+/* yjoinked */
+
+.homebutton {
+    color: paleturquoise;
+    text-align: center;
+    transition: all 1s ease;
+    font-size: 2vw;
+    position: relative;
+    top: 20px;
+}
+
+.downloadbutton {
+    color: paleturquoise;
+    text-align: center;
+    transition: all 1s ease;
+    font-size: 2vw;
+    position: relative;
+    bottom: 35px;
+}
+
+.downloadbutton:hover {
+    color: paleturquoise;
+    animation-name: homehover;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    cursor: normal;
+    text-underline-offset: 10;
+}
+
+.homebutton:hover {
+    color: paleturquoise;
+    animation-name: homehover;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    cursor: normal;
+    text-underline-offset: 10;
+}
+
+@keyframes homehover {
+    20% {
+      color: red;
+    }
+    40% {
+      color: orange;
+    }
+    60% {
+      color: yellow;
+    }
+    80% {
+      color: lime;
+    }
+    100% {
+      color: paleturquoise;
+    }
+}
+

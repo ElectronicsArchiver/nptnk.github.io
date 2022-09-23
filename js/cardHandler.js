@@ -189,11 +189,12 @@ var cardData = [
 ]
 
 window.onload = function () {
+    console.warn("hi");
+
     setTimeout(function(){
         const cards = document.getElementById("cards")
         for (var index = 0; index < cardData.length; index++) {
             var data = cardData[index].getCardDetails();
-            console.log(data);
             cards.innerHTML += 
             `<a target="_blank" ${"href=" + data.link}>
                 <div class=${data.recommended == false ? "card fadeIn" : "recommendedcard fadeIn"}>      

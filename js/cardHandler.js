@@ -79,8 +79,6 @@ var cardData = [
             return newdata;
         }
     },
-
-    https://github.com/wafflethings/ULTRAKILLtweaker/releases/download/V1.3.0/UKt_V1.3.0.zip
 ]
 
 window.onload = function () {

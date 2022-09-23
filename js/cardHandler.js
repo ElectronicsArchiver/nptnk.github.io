@@ -17,6 +17,7 @@ var defaultCardData = {
 
     "recommended": false,
     "modLoader": null,
+    "rating": 0,
 }
 
 var cardData = [

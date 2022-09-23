@@ -79,6 +79,111 @@ var cardData = [
             return newdata;
         }
     },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "ULTRAUNCANNY";
+            newdata.description = "Flip everything including your controls!";
+            newdata.contributors = "Robi"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "uuc.png";
+            newdata.recommended = false;
+            newdata.link = "https://gitlab.com/Robieh/ultrauncanny/uploads/fd9a64699b32a14ba74db4156b12568a/ULTRAUNCANNY.dll";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "QuickFist";
+            newdata.description = "No more switching arms, press the arm switch keybind and instantly use knuckleblaster.";
+            newdata.contributors = "BobbyShmurner"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = null;
+            newdata.recommended = false;
+            newdata.link = "https://github.com/BobbyShmurner/CGCustomWaves/releases/download/v1.0.0/CGCustomWaves.dll";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "2Spooky4Me";
+            newdata.description = "Configure seasonal events for ULTRAKILL.";
+            newdata.contributors = "Heckteck, Distrilul_"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = null;
+            newdata.recommended = false;
+            newdata.link = "https://github.com/distributivgesetz/2Spooky4Me/releases/download/1.2/TooSpookyForMe.dll";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "CGCustomWaves";
+            newdata.description = "A mod that lets you set a custom wave for The Cyber Grind.";
+            newdata.contributors = "BobbyShmurner"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "cgcustomwaves.png";
+            newdata.recommended = false;
+            newdata.link = "https://github.com/BobbyShmurner/CGCustomWaves/releases/download/v1.0.0/CGCustomWaves.dll";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "Cubemap Maker";
+            newdata.description = "A mod that lets you set a custom wave for The Cyber Grind.";
+            newdata.contributors = "BobbyShmurner"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "competitor.png";
+            newdata.recommended = false;
+            newdata.link = "https://github.com/BobbyShmurner/CubemapMaker/releases/tag/v1.0.3";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "CustomArms";
+            newdata.description = "This mod started ast a quick and dirty proof of concept, to showcase some modded arm ideas, The arms are only accessible when cheats are turned on.";
+            newdata.contributors = "Temperz87"
+            newdata.modLoader = loaders.umm;
+            newdata.thumbnail = "customarms.gif";
+            newdata.recommended = false;
+            newdata.link = "https://github.com/Temperz87/Ultrakill-Custom-Arms-Proof-Of-Concept/releases/download/v1.3.0/CustomArms.dll";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "UKMusicReplacement";
+            newdata.description = "Ultrakill mod allowing users to use custom songs in regular (non boss or special) levels";
+            newdata.contributors = "@ZedDevStuff"
+            newdata.modLoader = "UMM & BepInEx";
+            newdata.thumbnail = null;
+            newdata.recommended = false;
+            newdata.link = "https://github.com/ZedDevStuff/UKMusicReplacement/releases/download/0.7.0/UKMusicReplacement-v0.7.0.zip";
+
+            return newdata;
+        }
+    },
 ]
 
 window.onload = function () {

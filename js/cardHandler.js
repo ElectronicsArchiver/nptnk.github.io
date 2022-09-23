@@ -64,6 +64,23 @@ var cardData = [
             return newdata;
         }
     },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "ULTRAtweaker";
+            newdata.description = "Fully customizable tweaks and modifiers for ULTRAKILL";
+            newdata.contributors = "The-DoomMan"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "ukt.png";
+            newdata.recommended = false;
+            newdata.link = "https://github.com/wafflethings/ULTRAKILLtweaker/releases/download/V1.3.0/UKt_V1.3.0.zip";
+
+            return newdata;
+        }
+    },
+
+    https://github.com/wafflethings/ULTRAKILLtweaker/releases/download/V1.3.0/UKt_V1.3.0.zip
 ]
 
 window.onload = function () {

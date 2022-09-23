@@ -5,6 +5,7 @@ const images = {
 const loaders = {
     bepinex: "BepInEx",
     umm: "UMM",
+    both: umm + " & " + bepinex,
 }
 
 var defaultCardData = {
@@ -100,11 +101,11 @@ var cardData = [
             var newdata = defaultCardData;
             newdata.name = "QuickFist";
             newdata.description = "No more switching arms, press the arm switch keybind and instantly use knuckleblaster.";
-            newdata.contributors = "BobbyShmurner"
-            newdata.modLoader = loaders.bepinex;
+            newdata.contributors = "maranarasauce"
+            newdata.modLoader = loaders.both;
             newdata.thumbnail = null;
             newdata.recommended = false;
-            newdata.link = "https://github.com/BobbyShmurner/CGCustomWaves/releases/download/v1.0.0/CGCustomWaves.dll";
+            newdata.link = "https://github.com/maranarasauce/QuickFist/releases/tag/1.0.2";
 
             return newdata;
         }
@@ -176,7 +177,7 @@ var cardData = [
             newdata.name = "UKMusicReplacement";
             newdata.description = "Ultrakill mod allowing users to use custom songs in regular (non boss or special) levels";
             newdata.contributors = "@ZedDevStuff"
-            newdata.modLoader = "UMM & BepInEx";
+            newdata.modLoader = loaders.both;
             newdata.thumbnail = null;
             newdata.recommended = false;
             newdata.link = "https://github.com/ZedDevStuff/UKMusicReplacement/releases/download/0.7.0/UKMusicReplacement-v0.7.0.zip";

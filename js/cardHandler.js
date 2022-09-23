@@ -5,7 +5,7 @@ const images = {
 const loaders = {
     bepinex: "BepInEx",
     umm: "UMM",
-    both: umm + " & " + bepinex,
+    both: "UMM & BepInEx",
 }
 
 var defaultCardData = {

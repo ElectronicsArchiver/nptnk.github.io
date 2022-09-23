@@ -38,6 +38,21 @@ var cardData = [
         getCardDetails: function()
         {
             var newdata = defaultCardData;
+            newdata.name = "ULTRAtweaker";
+            newdata.description = "Fully customizable tweaks and modifiers for ULTRAKILL";
+            newdata.contributors = "wafflethings"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "ukt.png";
+            newdata.recommended = true;
+            newdata.link = "https://github.com/wafflethings/ULTRAKILLtweaker/releases/download/V1.3.0/UKt_V1.3.0.zip";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
             newdata.name = "MULTIKILL";
             newdata.description = "Multiplayer mod for ULTRAKILL";
             newdata.contributors = "Distrilul_, Heckteck, nptnk"
@@ -60,21 +75,6 @@ var cardData = [
             newdata.thumbnail = null;
             newdata.recommended = false;
             newdata.link = "https://github.com/The-DoomMan/ULTRASKINS/releases/download/release/ULTRASKINS.zip";
-
-            return newdata;
-        }
-    },
-    {
-        getCardDetails: function()
-        {
-            var newdata = defaultCardData;
-            newdata.name = "ULTRAtweaker";
-            newdata.description = "Fully customizable tweaks and modifiers for ULTRAKILL";
-            newdata.contributors = "wafflethings"
-            newdata.modLoader = loaders.bepinex;
-            newdata.thumbnail = "ukt.png";
-            newdata.recommended = false;
-            newdata.link = "https://github.com/wafflethings/ULTRAKILLtweaker/releases/download/V1.3.0/UKt_V1.3.0.zip";
 
             return newdata;
         }

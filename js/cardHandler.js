@@ -190,31 +190,28 @@ var cardData = [
 
 window.onload = function () {
     console.warn("hi");
-
-    setTimeout(function(){
-        const cards = document.getElementById("cards")
-        for (var index = 0; index < cardData.length; index++) {
-            var data = cardData[index].getCardDetails();
-            cards.innerHTML += 
-            `<a target="_blank" ${"href=" + data.link}>
-                <div class=${data.recommended == false ? "card fadeIn" : "recommendedcard fadeIn"}>      
-                    <div>
-                        <img src="${data.thumbnail == null ? "./images/none.png" : "./images/" + data.thumbnail}" class="cardimage">
-                    </div>
-                    <div>
-                        <p class="grayish-white">${data.modLoader}</p>
-                    </div>
-                    <div>
-                        <p class="text">${data.name}</p>
-                    </div>
-                    <div>
-                        <p class="text">${data.contributors == null ? "" : data.contributors}</p>
-                    </div>
-                    <div>
-                        <p class="text description">${data.description == null ? "" : data.description}</p>
-                    </div>
+    const cards = document.getElementById("cards")
+    for (var index = 0; index < cardData.length; index++) {
+        var data = cardData[index].getCardDetails();
+        cards.innerHTML += 
+        `<a target="_blank" ${"href=" + data.link}>
+            <div class=${data.recommended == false ? "card fadeIn" : "recommendedcard fadeIn"}>      
+                <div>
+                    <img src="${data.thumbnail == null ? "./images/none.png" : "./images/" + data.thumbnail}" class="cardimage">
                 </div>
-            </a>`
-        }
-    }, 1000);
+                <div>
+                    <p class="grayish-white">${data.modLoader}</p>
+                </div>
+                <div>
+                    <p class="text">${data.name}</p>
+                </div>
+                <div>
+                    <p class="text">${data.contributors == null ? "" : data.contributors}</p>
+                </div>
+                <div>
+                    <p class="text description">${data.description == null ? "" : data.description}</p>
+                </div>
+            </div>
+        </a>`
+    }
 };

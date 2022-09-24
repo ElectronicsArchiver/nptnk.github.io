@@ -177,11 +177,26 @@ var cardData = [
             var newdata = defaultCardData;
             newdata.name = "UKMusicReplacement";
             newdata.description = "Ultrakill mod allowing users to use custom songs in regular (non boss or special) levels";
-            newdata.contributors = "@ZedDevStuff"
+            newdata.contributors = "ZedDevStuff"
             newdata.modLoader = loaders.both;
             newdata.thumbnail = null;
             newdata.recommended = false;
             newdata.link = "https://github.com/ZedDevStuff/UKMusicReplacement/releases/download/0.7.0/UKMusicReplacement-v0.7.0.zip";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "UltraRandomizer";
+            newdata.description = "Enemy Randomizer for ULTRAKILL";
+            newdata.contributors = "radsi, nptnk"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = null;
+            newdata.recommended = false;
+            newdata.link = "https://github.com/radsi/Ultrakill-Randomizer/releases/tag/1.1";
 
             return newdata;
         }

@@ -31,7 +31,7 @@ var cardData = [
             newdata.modLoader = loaders.umm;
             newdata.thumbnail = "Temperz87/UMM.png";
             newdata.recommended = true;
-            newdata.link = "https://github.com/Temperz87/ultra-mod-manager/releases/download/0.4.1/UMM.v0.4.1.zip";
+            newdata.link = "https://github.com/Temperz87/ultra-mod-manager/releases";
 
             return newdata;
         }
@@ -46,7 +46,7 @@ var cardData = [
             newdata.modLoader = loaders.umm;
             newdata.thumbnail = "ukt.png";
             newdata.recommended = true;
-            newdata.link = "https://github.com/wafflethings/ULTRAKILLtweaker/releases/download/V1.3.0/UKt_V1.3.0.zip";
+            newdata.link = "https://github.com/wafflethings/ULTRAKILLtweaker";
 
             return newdata;
         }
@@ -76,7 +76,7 @@ var cardData = [
             newdata.modLoader = loaders.bepinex;
             newdata.thumbnail = null;
             newdata.recommended = false;
-            newdata.link = "https://github.com/The-DoomMan/ULTRASKINS/releases/download/release/ULTRASKINS.zip";
+            newdata.link = "https://github.com/The-DoomMan/ULTRASKINS";
 
             return newdata;
         }
@@ -106,7 +106,7 @@ var cardData = [
             newdata.modLoader = loaders.both;
             newdata.thumbnail = null;
             newdata.recommended = false;
-            newdata.link = "https://github.com/maranarasauce/QuickFist/releases/tag/1.0.2";
+            newdata.link = "https://github.com/maranarasauce/QuickFist";
 
             return newdata;
         }
@@ -121,7 +121,7 @@ var cardData = [
             newdata.modLoader = loaders.bepinex;
             newdata.thumbnail = null;
             newdata.recommended = false;
-            newdata.link = "https://github.com/distributivgesetz/2Spooky4Me/releases/download/1.2/TooSpookyForMe.dll";
+            newdata.link = "https://github.com/distributivgesetz/2Spooky4Me";
 
             return newdata;
         }
@@ -136,7 +136,7 @@ var cardData = [
             newdata.modLoader = loaders.bepinex;
             newdata.thumbnail = "cgcustomwaves.png";
             newdata.recommended = false;
-            newdata.link = "https://github.com/BobbyShmurner/CGCustomWaves/releases/download/v1.0.0/CGCustomWaves.dll";
+            newdata.link = "https://github.com/BobbyShmurner/CGCustomWaves";
 
             return newdata;
         }
@@ -151,7 +151,7 @@ var cardData = [
             newdata.modLoader = loaders.bepinex;
             newdata.thumbnail = "competitor.png";
             newdata.recommended = false;
-            newdata.link = "https://github.com/BobbyShmurner/CubemapMaker/releases/tag/v1.0.3";
+            newdata.link = "https://github.com/BobbyShmurner/CubemapMaker";
 
             return newdata;
         }
@@ -166,7 +166,7 @@ var cardData = [
             newdata.modLoader = loaders.umm;
             newdata.thumbnail = "customarms.gif";
             newdata.recommended = false;
-            newdata.link = "https://github.com/Temperz87/Ultrakill-Custom-Arms-Proof-Of-Concept/releases/download/v1.3.0/CustomArms.dll";
+            newdata.link = "https://github.com/Temperz87/Ultrakill-Custom-Arms-Proof-Of-Concept";
 
             return newdata;
         }
@@ -181,7 +181,7 @@ var cardData = [
             newdata.modLoader = loaders.both;
             newdata.thumbnail = null;
             newdata.recommended = false;
-            newdata.link = "https://github.com/ZedDevStuff/UKMusicReplacement/releases/download/0.7.0/UKMusicReplacement-v0.7.0.zip";
+            newdata.link = "https://github.com/ZedDevStuff/UKMusicReplacement";
 
             return newdata;
         }
@@ -196,7 +196,7 @@ var cardData = [
             newdata.modLoader = loaders.bepinex;
             newdata.thumbnail = null;
             newdata.recommended = false;
-            newdata.link = "https://github.com/radsi/Ultrakill-Randomizer/releases/tag/1.1";
+            newdata.link = "https://github.com/radsi/Ultrakill-Randomizer";
 
             return newdata;
         }

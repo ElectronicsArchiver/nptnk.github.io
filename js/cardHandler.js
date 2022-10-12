@@ -55,6 +55,36 @@ var cardData = [
         getCardDetails: function()
         {
             var newdata = defaultCardData;
+            newdata.name = "UltraFunGuns";
+            newdata.description = "An ULTRAKILL mod with fun weapons!!";
+            newdata.contributors = "Hydraxous"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "ufg.png";
+            newdata.recommended = true;
+            newdata.link = "https://github.com/Hydraxous/UltraFunGuns";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "EasyPZ-ULTRAKILL";
+            newdata.description = "Tiny QoL mod for ULTRAKILL to give you a bit more info about the P rank requirements, restart hotkeys, and automatic restarts.";
+            newdata.contributors = "Hydraxous"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "easypz.png";
+            newdata.recommended = true;
+            newdata.link = "https://github.com/Hydraxous/EasyPZ-ULTRAKILL";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
             newdata.name = "MULTIKILL";
             newdata.description = "Multiplayer mod for ULTRAKILL";
             newdata.contributors = "Distrilul_, Heckteck, nptnk"
@@ -197,6 +227,21 @@ var cardData = [
             newdata.thumbnail = null;
             newdata.recommended = false;
             newdata.link = "https://github.com/radsi/Ultrakill-Randomizer";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
+            newdata.name = "BetterWeaponColourMenu";
+            newdata.description = "A mod designed to improve the custom gun colour system.";
+            newdata.contributors = "nota8ot"
+            newdata.modLoader = loaders.umm;
+            newdata.thumbnail = null;
+            newdata.recommended = false;
+            newdata.link = "https://github.com/nota8ot/BetterWeaponColourMenu";
 
             return newdata;
         }

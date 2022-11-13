@@ -25,6 +25,21 @@ var cardData = [
         getCardDetails: function()
         {
             var newdata = defaultCardData;
+            newdata.name = "UltrakULL";
+            newdata.description = "ULTRAKILL language translation and localization into various languages.";
+            newdata.contributors = "ClearwaterTM"
+            newdata.modLoader = loaders.umm;
+            newdata.thumbnail = null;
+            newdata.recommended = true;
+            newdata.link = "https://github.com/ClearwaterTM/UltrakULL";
+
+            return newdata;
+        }
+    },
+    {
+        getCardDetails: function()
+        {
+            var newdata = defaultCardData;
             newdata.name = "ULTRA MOD MANAGER";
             newdata.description = "Ingame mod manager for ULTRAKILL";
             newdata.contributors = "Temperz87"

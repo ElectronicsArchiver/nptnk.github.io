@@ -27,9 +27,9 @@ var cardData = [
             var newdata = defaultCardData;
             newdata.name = "UltrakULL";
             newdata.description = "ULTRAKILL language translation and localization into various languages.";
-            newdata.contributors = "ClearwaterTM"
-            newdata.modLoader = loaders.umm;
-            newdata.thumbnail = null;
+            newdata.contributors = "Clearwater"
+            newdata.modLoader = loaders.bepinex;
+            newdata.thumbnail = "ultrakull.png";
             newdata.recommended = true;
             newdata.link = "https://github.com/ClearwaterTM/UltrakULL";
 

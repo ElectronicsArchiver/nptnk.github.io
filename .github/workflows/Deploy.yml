@@ -1,0 +1,52 @@
+
+name : Deploy Static Website
+
+on:
+    workflow_dispatch:
+
+    push:
+
+        branches : [ 'main' ]
+        paths : [ 'Source/**' ]
+
+
+permissions:
+
+    id-token : write
+    contents : read
+    pages : write
+
+
+concurrency:
+
+    cancel-in-progress : true
+    group : pages
+
+
+jobs:
+    Deploy:
+
+        environment:
+
+            name : github-pages
+            url : ${{ steps.deployment.outputs.page_url }}
+
+        runs-on : ubuntu-latest
+
+        steps:
+
+            -   name : Checkout
+                uses : actions/checkout@v3
+
+            -   name : Configure GitHub Pages
+                uses : actions/configure-pages@v2
+
+            -   name : Upload
+                uses : actions/upload-pages-artifact@v1
+                with:
+
+                    path : Source
+
+            -   name : Deploy
+                uses : actions/deploy-pages@v1
+                id : deployment

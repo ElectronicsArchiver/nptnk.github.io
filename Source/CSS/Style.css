@@ -1,6 +1,6 @@
 @font-face {
   font-family: vcr;
-  src: url(../fonts/vcr.ttf);
+  src: url(../Fonts/VCR.ttf);
 }
 body {
   background-color: #000000;
@@ -8,7 +8,7 @@ body {
 }
 
 .backgroundimage {
-  background-image: url("../images/background.png");
+  background-image: url("../Images/background.png");
   background-size: cover;
   opacity: 25%;
   filter: blur(8px);

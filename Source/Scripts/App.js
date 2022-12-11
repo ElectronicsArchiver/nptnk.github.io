@@ -265,7 +265,7 @@ var cardData = [
 
 window.onload = function () {
     console.warn("hi");
-    const cards = document.getElementById("cards")
+    const cards = document.getElementById("Cards")
     for (var index = 0; index < cardData.length; index++) {
         var data = cardData[index].getCardDetails();
         cards.innerHTML +=

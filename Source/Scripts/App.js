@@ -1,5 +1,5 @@
 const images = {
-    none: "images/none.jpg"
+    none: "Images/none.jpg"
 }
 
 const loaders = {
@@ -268,11 +268,11 @@ window.onload = function () {
     const cards = document.getElementById("cards")
     for (var index = 0; index < cardData.length; index++) {
         var data = cardData[index].getCardDetails();
-        cards.innerHTML += 
+        cards.innerHTML +=
         `<a target="_blank" ${"href=" + data.link}>
-            <div class=${data.recommended == false ? "card fadeIn" : "recommendedcard fadeIn"}>      
+            <div class=${data.recommended == false ? "card fadeIn" : "recommendedcard fadeIn"}>
                 <div>
-                    <img src="${data.thumbnail == null ? "./images/none.png" : "./images/" + data.thumbnail}" class="cardimage">
+                    <img src="${data.thumbnail == null ? "./Images/none.png" : "./Images/" + data.thumbnail}" class="cardimage">
                 </div>
                 <div>
                     <p class="grayish-white">${data.modLoader}</p>

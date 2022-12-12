@@ -1,0 +1,27 @@
+
+#Background {
+
+    position : fixed ;
+    z-index : -1 ;
+
+    height : 100% ;
+    width : 100% ;
+
+    opacity : 25% ;
+    filter : blur(8px) ;
+
+    background-image : url( ../Images/Background.png );
+    background-size : cover ;
+}
+
+#Cards {
+
+    justify-content : center ;
+    align-items : stretch ;
+
+    flex-wrap : wrap ;
+    display : flex ;
+
+    padding-bottom : 3rem ;
+    gap : 2rem ;
+}

@@ -1,0 +1,85 @@
+
+.Card {
+
+    width : 10rem ;
+
+    background-color : #0008 ;
+
+    border-radius : 0.4rem ;
+    outline-style : groove ;
+    outline : 2px solid var(--Muted) ;
+
+    text-align : center ;
+
+    -webkit-animation-fill-mode: forwards ;
+    -webkit-animation : fadeinkeyframes 1s ;
+
+    animation-fill-mode : forwards ;
+    animation : fadeinkeyframes 1s ;
+
+    flex-direction : column ;
+    display : flex ;
+
+    padding-bottom : 1rem ;
+    gap : 1rem ;
+}
+
+
+/*  Recommended  */
+
+.Card:nth-child(-n+5) {
+    outline-color : var(--Highlight) ;
+}
+
+
+.Card > :not(:first-child) {
+    padding : 0 0.6rem ;
+}
+
+
+/*  Thumbnail  */
+
+.Card > img {
+
+    border-bottom : 2px solid var(--Muted) ;
+
+    width : 100% ;
+}
+
+
+/*  Name  */
+
+.Card > h3 {
+    color : var(--Highlight) ;
+}
+
+
+/*  Text  */
+
+.Card > p {
+    line-height : 1rem ;
+    font-size : 0.8rem ;
+    color : var(--Muted) ;
+}
+
+
+/*  Description  */
+
+.Card > .Description {
+
+    align-content : center ;
+    display : grid ;
+
+    flex-grow : 1 ;
+
+    color : var(--Dark) ;
+}
+
+
+/*  Mod Loaders  */
+
+.Card > :last-child {
+
+    opacity : 0.7 ;
+    color : var(--Highlight) ;
+}

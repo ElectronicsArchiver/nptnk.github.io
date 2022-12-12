@@ -1,0 +1,14 @@
+{
+    "imports" : {
+
+        "FileSystem" : "https://deno.land/std@0.167.0/fs/mod.ts" ,
+        "YAML" : "https://deno.land/std@0.167.0/encoding/yaml.ts" ,
+        "Path" : "https://deno.land/std@0.167.0/path/mod.ts" ,
+
+        "CleanCSS" : "npm:clean-css@5.3.1" ,
+
+        "Minify" : "./Source/Minify.js" ,
+        "Paths" : "./Source/Paths.js" ,
+        "Find" : "./Source/Find.js"
+    }
+}

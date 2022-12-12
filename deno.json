@@ -1,0 +1,7 @@
+{
+    "importMap" : "Imports.json" ,
+
+    "tasks" : {
+        "build" : "deno run --unstable --allow-env --watch=Data/ --allow-read=.,Data/,Website/ --allow-write=Website/ Source/App.js"
+    }
+}

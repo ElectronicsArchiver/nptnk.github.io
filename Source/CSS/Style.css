@@ -49,6 +49,7 @@ h1 {
     font-size : 4rem ;
     color : transparent ;
 
+    align-self : center ;
     padding : 3rem ;
 
     -webkit-text-stroke-color : var(--Highlight) ;

@@ -53,10 +53,10 @@ function toCard ( mod , index ){
     description ??= 'Missing Description';
 
     if(isArray(loaders))
-        loaders = loaders.join(' , ');
+        loaders = loaders.join(' & ');
 
     if(isArray(contributors))
-        contributors = contributors.join(' , ');
+        contributors = contributors.join('<br>');
 
 
     let { thumbnail } = mod;
@@ -84,25 +84,22 @@ function toPreview ( card ){
     `
 
     const sections = [
-        `<img class = cardimage src = '${ thumbnail }' onerror = '${ fallback }'>` ,
-        `<p class = grayish-white>${ loaders }</p>` ,
-        `<p class = text>${ name }</p>` ,
-        `<p class = text>${ contributors }</p>` ,
-        `<p class = 'text description'>${ description }</p>`
+        `<img src = '${ thumbnail }' onerror = '${ fallback }'>` ,
+        `<h3>${ name }</h3>` ,
+        `<p>${ contributors }</p>` ,
+        `<p class = Description>${ description }</p>` ,
+        `<p>${ loaders }</p>`
     ]
 
     const content = sections
-        .map(div)
         .join('');
 
 
     const { repository } = card;
 
     return `
-        <a target = _blank href = '${ repository }'>
-            <div class = 'card fadeIn'>
-                ${ content }
-            </div>
+        <a class = Card target = _blank href = '${ repository }'>
+            ${ content }
         </a>
     `
 }

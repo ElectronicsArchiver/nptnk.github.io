@@ -15,7 +15,7 @@ const div = ( html ) =>
     `<div>${ html }</div>`
 
 
-const mods = await fetchJSON('../Data/Mods.json');
+const mods = await fetchJSON('./Data/Mods.json');
 
 
 const cards = document.getElementById('Cards');

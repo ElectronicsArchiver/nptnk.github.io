@@ -1,0 +1,17 @@
+
+github : distributivgesetz/2Spooky4Me
+
+loaders:
+
+    -   BepInEx
+
+contributors:
+
+    -   Distrilul_
+    -   Heckteck
+
+description:
+
+    '''
+    Configure seasonal events for ULTRAKILL.
+    '''

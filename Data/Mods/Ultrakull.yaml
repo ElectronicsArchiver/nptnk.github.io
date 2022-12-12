@@ -1,0 +1,16 @@
+
+github : ClearwaterTM/UltrakULL
+
+contributors:
+
+    -   Clearwater
+
+loaders:
+
+    -   BepInEx
+
+description:
+
+    '''
+    ULTRAKILL language translation and localization into various languages.
+    '''

@@ -1,0 +1,17 @@
+
+github : maranarasauce/QuickFist
+
+contributors:
+
+    -   maranarasauce
+
+loaders:
+
+    -   BepInEx
+    -   UMM
+
+description:
+
+    '''
+    No more switching arms, press the arm switch keybind and instantly use knuckleblaster.
+    '''

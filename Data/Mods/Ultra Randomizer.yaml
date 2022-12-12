@@ -1,0 +1,17 @@
+
+github : radsi/Ultrakill-Randomizer
+
+loaders:
+
+    -   BepInEx
+
+contributors:
+
+    -   radsi
+    -   nptnk
+
+description:
+
+    '''
+    Enemy Randomizer for ULTRAKILL
+    '''

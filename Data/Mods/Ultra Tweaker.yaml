@@ -1,0 +1,16 @@
+
+github : wafflethings/ULTRAKILLtweaker
+
+contributors:
+
+    -   wafflethings
+
+loaders:
+
+    -   UMM
+
+description:
+
+    '''
+    Fully customizable tweaks and modifiers for ULTRAKILL
+    '''

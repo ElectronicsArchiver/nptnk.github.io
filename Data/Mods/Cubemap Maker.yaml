@@ -1,0 +1,16 @@
+
+github : BobbyShmurner/CubemapMaker
+
+contributors:
+
+    -   BobbyShmurner
+
+loaders:
+
+    -   BepInEx
+
+description:
+
+    '''
+    A mod that lets you set a custom wave for The Cyber Grind.
+    '''

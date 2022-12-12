@@ -1,0 +1,16 @@
+
+contributors:
+
+    -   Distrilul_
+    -   Heckteck
+    -   nptnk
+
+loaders:
+
+    -   BepInEx
+
+description:
+
+    '''
+    Multiplayer mod for ULTRAKILL
+    '''

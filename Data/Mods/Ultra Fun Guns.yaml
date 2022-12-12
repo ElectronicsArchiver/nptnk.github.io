@@ -1,0 +1,16 @@
+
+github : Hydraxous/UltraFunGuns
+
+contributors:
+
+    - Hydraxous
+
+loaders:
+
+    -   BepInEx
+
+description:
+
+    '''
+    An ULTRAKILL mod with fun weapons!!
+    '''

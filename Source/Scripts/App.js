@@ -59,9 +59,13 @@ function toCard ( mod , index ){
         contributors = contributors.join('<br>');
 
 
+    const id = name
+        .replaceAll('-','')
+        .replaceAll(' ','')
+
     let { thumbnail } = mod;
 
-    thumbnail = `Images/Mods/${ name }.${ thumbnail ?? 'png' }`;
+    thumbnail = `Images/Mods/${ id }.${ thumbnail ?? 'png' }`;
 
 
     return {

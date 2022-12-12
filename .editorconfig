@@ -5,10 +5,10 @@ root = true
 insert_final_newline = true
 end_of_line = lf
 
-[*.{md,ts,js,css,scss,html,yml,yaml,editorconfig}]
+[*.{md,ts,js,css,scss,html,yml,yaml,json,editorconfig}]
 indent_style = space
 indent_size = 4
 charset = utf-8
 
-[*.{ts,js,css,scss,html,yml,yaml,editorconfig}]
+[*.{ts,js,css,scss,html,yml,yaml,json,editorconfig}]
 trim_trailing_whitespace = true

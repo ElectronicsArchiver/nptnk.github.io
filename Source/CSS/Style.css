@@ -8,7 +8,7 @@ body {
 }
 
 .backgroundimage {
-  background-image: url("../Images/background.png");
+  background-image: url("../Images/Background.png");
   background-size: cover;
   opacity: 25%;
   filter: blur(8px);
@@ -94,15 +94,8 @@ body {
   margin: 20px;
 }
 
-.recommendedcard {
-  width: 15.9vw;
-  height: 20vw;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  color: gray;
-  outline: 2px solid rgb(255, 174, 0);
-  float: left;
-  margin: 20px;
+:nth-child(-n+5) > .card {
+  outline-color: rgb(255, 174, 0);
 }
 
 .text {

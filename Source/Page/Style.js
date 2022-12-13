@@ -27,12 +27,7 @@ export default async function (){
 
     const { styles , stats } = minifyCSS(combined);
 
-
-    const { originalSize , minifiedSize , timeSpent } = stats;
-
-    log(`
-        Minified ${ originalSize } Bytes of CSS to ${ minifiedSize } Bytes in ${ timeSpent } ms.
-    `)
+    printStatistics(stats);
 
     await writeTextFile(Outputs.Style,styles);
 }
@@ -47,4 +42,12 @@ const query = {
 
 function findStyles (){
     return walk(Inputs.Styles,query)
+}
+
+
+function printStatistics ( statistics ){
+
+    const { originalSize , minifiedSize , timeSpent } = statistics;
+
+    log(`Minified ${ originalSize } Bytes of CSS to ${ minifiedSize } Bytes in ${ timeSpent } ms.`);
 }

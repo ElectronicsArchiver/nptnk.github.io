@@ -3,7 +3,7 @@
 import { fromFileUrl , dirname , join } from 'Path'
 
 
-const repository = join(dirname(fromFileUrl(import.meta.url)),'..');
+const repository = join(dirname(fromFileUrl(import.meta.url)),'..','..');
 
 
 
@@ -29,6 +29,8 @@ export const Outputs = {
 
     Images : join(Resources,'Images') ,
     Style : join(Resources,'Style.css') ,
-    Index : join(Resources,'index.html') ,
-    Font : join(Resources,'VCR.ttf')
+    Index : join(Website,'index.html') ,
+    CName : join(Website,'CNAME') ,
+    Font : join(Resources,'VCR.ttf') ,
+    Mods : join(Resources,'Mods')
 }

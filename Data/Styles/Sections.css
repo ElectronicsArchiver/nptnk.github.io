@@ -10,7 +10,7 @@
     opacity : 25% ;
     filter : blur(8px) ;
 
-    background-image : url( ../Images/Background.png );
+    background-image : url( ./Images/Background.png );
     background-size : cover ;
 }
 

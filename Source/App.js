@@ -1,109 +1,28 @@
 
-async function fetchJSON ( url ){
-    return await fetch(url)
-        .then((response) => response.json());
-}
+import { Outputs , Inputs } from 'Paths'
+import { ensureDir , emptyDir } from 'FileSystem'
 
 
-const { clear , log } = console;
-const { isArray } = Array;
+import copyResources from './Page/Resources.js'
+import generateCNAME from './Page/CNAME.js'
+import generateIndex from './Page/Index.js'
+import exportStyles from './Page/Style.js'
+
+
+const { timeEnd , time , clear , log } = console;
 
 clear();
 
 
-const div = ( html ) =>
-    `<div>${ html }</div>`
+time('Building');
 
+await emptyDir(Outputs.Website);
+await ensureDir(Outputs.Resources);
+await ensureDir(Outputs.Mods);
 
-const mods = await fetchJSON('./Data/Mods.json');
+await copyResources();
+await exportStyles();
+await generateCNAME();
+await generateIndex();
 
-
-const cards = document.getElementById('Cards');
-
-const addCard = (preview) =>
-    cards.innerHTML += preview;
-
-mods
-.map(toCard)
-.map(toPreview)
-.forEach(addCard);
-
-
-
-
-function toCard ( mod , index ){
-
-    const recommended = index < 6;
-
-
-    let { github , gitlab , name } = mod;
-
-    github &&= `https://GitHub.com/${ github }`;
-
-    gitlab &&= `https://GitLab.com/${ gitlab }`;
-
-
-    const repository = github ?? gitlab ?? '#';
-
-
-    let { contributors , description , loaders } = mod;
-
-    contributors ??= 'Unknown';
-
-    description ??= 'Missing Description';
-
-    if(isArray(loaders))
-        loaders = loaders.join(' & ');
-
-    if(isArray(contributors))
-        contributors = contributors.join('<br>');
-
-
-    const id = name
-        .replaceAll('-','')
-        .replaceAll(' ','')
-
-    let { thumbnail } = mod;
-
-    thumbnail = `Images/Mods/${ id }.${ thumbnail ?? 'png' }`;
-
-
-    return {
-        contributors , description , thumbnail ,
-        repository , loaders , name
-    }
-}
-
-
-
-
-
-function toPreview ( card ){
-
-    const { contributors , description , thumbnail , loaders , name } = card;
-
-    const fallback = `
-        this.onerror = null;
-        this.src = "Images/Fallback.png"
-    `
-
-    const sections = [
-        `<img src = '${ thumbnail }' onerror = '${ fallback }'>` ,
-        `<h3>${ name }</h3>` ,
-        `<p>${ contributors }</p>` ,
-        `<p class = Description>${ description }</p>` ,
-        `<p>${ loaders }</p>`
-    ]
-
-    const content = sections
-        .join('');
-
-
-    const { repository } = card;
-
-    return `
-        <a class = Card target = _blank href = '${ repository }'>
-            ${ content }
-        </a>
-    `
-}
+timeEnd('Building');

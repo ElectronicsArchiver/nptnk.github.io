@@ -18,10 +18,10 @@ export function render ( mod ){
     const content = sections
         .join('');
 
-    const { repository } = mod;
+    const { recommended , repository } = mod;
 
     return link(content,{
-        class : 'Card' ,
+        class : 'Card ' + ( recommended ? 'Recommended' : '' ) ,
         target : '_blank' ,
         href : repository
     })

@@ -27,7 +27,7 @@
 
 /*  Recommended  */
 
-.Card:nth-child(-n+5) {
+.Card.Recommended {
     outline-color : var(--Highlight) ;
 }
 

@@ -35,16 +35,20 @@ export default async function generateIndex (){
 
 async function generateCards (){
 
-    let cards = '';
+    const cards = [];
 
     for await ( const mod of loadMods() ){
 
         await copyAssets(mod);
 
-        cards += render(mod);
+        cards.push([ mod , render(mod) ]);
     }
 
+    cards.sort(byRelevance);
+
     return cards
+        .map(([ _ , html ]) => html)
+        .join('');
 }
 
 
@@ -58,4 +62,26 @@ async function copyAssets ( mod ){
     const destination = join(Outputs.Mods,file);
 
     await copyFile(source,destination);
+}
+
+
+/**
+ *  Sorting:
+ *  1.  Recommended mods
+ *  2.  Mods with thumbails
+ *  3.  Remaining
+ */
+
+function byRelevance ([ a ],[ b ]){
+
+    if(a.recommended > b.recommended)
+        return -1
+
+    if(a.thumbnail.source > b.thumbnail.source)
+        return -1
+
+    if(a.thumbnail.source)
+        return 0
+
+    return 1
 }

@@ -2,12 +2,7 @@
 import { extname } from 'Path'
 
 
-let count = 0;
-
-
 export function parseMod ( data ){
-
-    const recommended = count++ < 6;
 
 
     let { github , gitlab , name } = data;
@@ -42,8 +37,10 @@ export function parseMod ( data ){
     thumbnail ??= { link : `x/Images/Fallback.png` }
 
 
+    const { recommended = false } = data;
+
     return {
-        contributors , description , thumbnail ,
-        repository , loaders , name , id
+        contributors , description , recommended ,
+        thumbnail , repository , loaders , name , id
     }
 }

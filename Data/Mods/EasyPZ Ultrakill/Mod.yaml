@@ -12,8 +12,6 @@ loaders:
     -   BepInEx
 
 
-description:
+description: |
 
-    '''
     Tiny QoL mod for ULTRAKILL to give you a bit more info about the P rank requirements, restart hotkeys, and automatic restarts.
-    '''

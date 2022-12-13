@@ -12,8 +12,6 @@ loaders:
     -   BepInEx
     -   UMM
 
-description:
+description: |
 
-    '''
     Ultrakill mod allowing users to use custom songs in regular (non boss or special) levels
-    '''

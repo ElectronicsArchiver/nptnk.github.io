@@ -11,8 +11,6 @@ loaders:
 
     -   BepInEx
 
-description:
+description: |
 
-    '''
     ULTRAKILL language translation and localization into various languages.
-    '''

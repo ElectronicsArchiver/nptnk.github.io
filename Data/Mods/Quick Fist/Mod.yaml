@@ -12,8 +12,6 @@ loaders:
     -   BepInEx
     -   UMM
 
-description:
+description: |
 
-    '''
     No more switching arms, press the arm switch keybind and instantly use knuckleblaster.
-    '''

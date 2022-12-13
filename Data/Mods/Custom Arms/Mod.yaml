@@ -11,8 +11,6 @@ loaders:
 
     -   UMM
 
-description:
+description: |
 
-    '''
     This mod started ast a quick and dirty proof of concept, to showcase some modded arm ideas, The arms are only accessible when cheats are turned on.
-    '''

@@ -11,8 +11,6 @@ loaders:
 
     -   UMM
 
-description:
+description: |
 
-    '''
     Ingame mod manager for ULTRAKILL
-    '''
